@@ -1,0 +1,22 @@
+<svg width="74" height="52" viewBox="0 0 74 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <![CDATA[
+      text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    ]]>
+  </style>
+  <g clip-path="url(#clip0)">
+    <!-- Letter K -->
+    <text x="5" y="40" fill="#FFCB05">K&#38;</text>
+    <!-- Letter A -->
+    <text x="40" y="40" fill="#FFF200">A</text>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="74" height="52" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

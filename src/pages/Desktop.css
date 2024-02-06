@@ -1,0 +1,634 @@
+.background {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  background: radial-gradient(50% 50% at 50% 50%, #14171a, #070809);
+  width: 1440px;
+  height: 477px;
+}
+.privacy-policy {
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 100%;
+}
+.links {
+  position: absolute;
+  top: 339px;
+  left: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.designed-by-ka {
+  position: absolute;
+  top: 339px;
+  right: 224px;
+  letter-spacing: -0.04em;
+  line-height: 100%;
+  text-align: right;
+}
+.footer {
+  position: absolute;
+  top: 3896px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 477px;
+  color: var(--color-darkslategray);
+}
+.product {
+  position: relative;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.04em;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-darkslategray);
+  display: inline-block;
+  width: 202px;
+}
+.use-cases {
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 100%;
+  display: inline-block;
+  width: 202px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xl);
+}
+.footer-links {
+  position: absolute;
+  top: 3962px;
+  left: calc(50% - 500px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-45xl);
+  color: var(--color-silver);
+}
+.work {
+  position: relative;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navigation4 {
+  position: absolute;
+  top: 49px;
+  left: calc(50% - 119.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.navbar-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ffcb05;
+  width: 179px;
+  height: 39px;
+}
+.start-a-project {
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 143px;
+  height: 26px;
+}
+.envelope-icon {
+  position: absolute;
+  height: 30.77%;
+  width: 9.5%;
+  top: 33.33%;
+  right: 84.92%;
+  bottom: 35.9%;
+  left: 5.59%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.navbar {
+  position: absolute;
+  top: 35px;
+  left: 1061px;
+  width: 179px;
+  height: 39px;
+  text-align: center;
+  color: #000;
+}
+.hp-desktop-gradiant-1-icon {
+  position: absolute;
+  top: -79px;
+  left: 1760px;
+  width: 1521px;
+  height: 1442px;
+  object-fit: cover;
+}
+.frame-child {
+  position: absolute;
+  top: 226px;
+  left: -37px;
+  width: 592px;
+  height: 225px;
+}
+.div {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+  width: 196px;
+}
+.websites-already-thriving {
+  position: relative;
+  font-size: 20px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  width: 196px;
+}
+.parent {
+  position: absolute;
+  top: calc(50% - 166px);
+  left: calc(50% - 97.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.frame-parent {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--neutral-900);
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-image: linear-gradient(to right bottom, var(--gd) 10%, transparent 10%) 1;
+  box-sizing: border-box;
+  width: 259px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.experience {
+  margin: 0;
+}
+.the-power-of {
+  margin: 0;
+  color: var(--gd);
+}
+.speed {
+  color: var(--gd);
+}
+.hosting-infrastructure {
+  margin: 0;
+  color: #b6a3ff;
+}
+.experience-the-power-container {
+  position: absolute;
+  top: calc(50% - 159px);
+  left: 335px;
+  line-height: 120%;
+  font-weight: 500;
+  display: inline-block;
+  width: 360px;
+}
+.button1 {
+  position: relative;
+  font-weight: 500;
+}
+
+.component-1 {
+  position: absolute;
+  top: 317px;
+  left: 556px;
+  border: 1px solid var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 20px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  transition: 0.3s ease-in-out; /* Add a transition for a smoother effect */
+}
+
+.component-1:hover {
+  display: none;
+  cursor: pointer !important;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(92.28deg, #fa8742, #fabc0e 63.98%, #ffdd51 87.85%) !important;
+}
+
+.experience-the-power-of-speed-parent {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  background-color: var(--neutral-900);
+  overflow: hidden;
+  text-align: right;
+  font-size: var(--font-size-17xl);
+
+  /* Set linear gradient borders on the top and right sides */
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-image: linear-gradient(to left bottom, var(--gd) 10%, transparent 10%) 1;
+}
+
+
+
+.selling-point {
+  position: absolute;
+  top: 1566px;
+  left: 219px;
+  width: 1016px;
+  height: 396px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.join-400 {
+  margin-block-start: 0;
+  margin-block-end: 16px;
+  font-weight: 800;
+  background: linear-gradient(90.74deg, #f37022, #ffd420);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.companies-already-growing {
+  margin: 0;
+  font-size: var(--font-size-17xl);
+  font-weight: 500;
+}
+.text {
+  align-self: stretch;
+  position: relative;
+  line-height: 71px;
+}
+.social-proof {
+  position: absolute;
+  top: 3476px;
+  left: 787px;
+  width: 1016px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  mix-blend-mode: normal;
+  font-size: 96px;
+}
+.title {
+  position: absolute;
+  height: 54.33%;
+  width: 98.72%;
+  top: 0%;
+  left: 0%;
+  line-height: 110%;
+  font-weight: 800;
+  background: linear-gradient(244.91deg, #27daa4, #57f2cc 47.87%, #4596fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+} 
+.links a:hover {
+  color: #ffffff; /* Change to desired hover color */
+  transition: color 0.3s ease-in-out;
+}
+.background {
+  animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 110% 110%;
+  }
+}
+.title, .we-are {
+  animation: fadeAnimation 3s infinite alternate;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.title1 {
+  position: absolute;
+  height: 54.33%;
+  width: 98.72%;
+  top: 45.67%;
+  left: 1.28%;
+  font-size: var(--font-size-29xl);
+  line-height: 110%;
+  display: inline-block;
+}
+.component-2 {
+  position: absolute;
+  top: 194px;
+  left: 212px;
+  width: 935px;
+  height: 508px;
+  font-size: 200px;
+}
+.puma-logo-icon {
+  position: relative;
+  width: 89.6px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.whatsapp-icon {
+  position: relative;
+  width: 135.1px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.google-2015-1-icon {
+  position: relative;
+  width: 122.5px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.spotify-1-1-icon {
+  position: relative;
+  width: 133.4px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.microsoft-1-icon {
+  position: relative;
+  width: 149.8px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.fedex-express-6-1-icon {
+  position: relative;
+  width: 108.2px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.airbnb-1-icon {
+  position: relative;
+  width: 102.6px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.puma-logo-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-45xl);
+}
+.vector-icon {
+  position: absolute;
+  height: 100%;
+  width: 31.91%;
+  top: 0%;
+  right: 68.09%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon {
+  position: absolute;
+  height: 90.67%;
+  width: 64.93%;
+  top: 3.33%;
+  right: 0%;
+  bottom: 6%;
+  left: 35.07%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.new-youtube-logo {
+  position: relative;
+  width: 136px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.walmart-1-icon {
+  position: relative;
+  width: 168.4px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.binance-1-icon {
+  position: relative;
+  width: 160px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.slack-icon {
+  position: relative;
+  width: 113.5px;
+  height: 34px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.canon-logo-icon {
+  position: relative;
+  width: 134.9px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.spacex-icon {
+  position: relative;
+  width: 259.7px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logos1 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 646.1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 56px;
+}
+.overlay-left {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  background: linear-gradient(90deg, #070809, rgba(7, 8, 9, 0)),
+    linear-gradient(90deg, #070809, rgba(7, 8, 9, 0));
+  width: 460px;
+  height: 144px;
+}
+.overlay-right {
+  position: absolute;
+  top: 0px;
+  left: calc(50% + 720px);
+  background: linear-gradient(90deg, #070809, rgba(7, 8, 9, 0)),
+    linear-gradient(90deg, #070809, rgba(7, 8, 9, 0));
+  width: 460px;
+  height: 144px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.logos {
+  position: absolute;
+  top: 3654px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 144px;
+}
+.icon {
+  position: absolute;
+  top: 728px;
+  left: 506px;
+  width: 1072px;
+  height: 714px;
+  object-fit: cover;
+}
+.we-are {
+  margin-block-start: 0;
+  margin-block-end: 15px;
+  line-height: 100%;
+  font-weight: 800;
+  background: linear-gradient(
+    92.28deg,
+    #fa8742,
+    #fabc0e 63.98%,
+    #ffdd51 87.85%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.creative-designers-insightful1 {
+  line-height: 125%;
+}
+.creative-designers-insightful {
+  margin-block-start: 0;
+  margin-block-end: 15px;
+  font-size: var(--font-size-17xl);
+}
+.we-are-creative-container {
+  position: absolute;
+  top: 912px;
+  left: 221px;
+  display: inline-block;
+  width: 710px;
+  height: 231px;
+  font-size: 128px;
+}
+.the-organization-is {
+  position: absolute;
+  top: 1195px;
+  left: 221px;
+  font-size: var(--font-size-base);
+  line-height: 132%;
+  font-weight: 500;
+  color: #e1e1e1;
+  display: inline-block;
+  width: 588px;
+  height: 130px;
+}
+.desktop-child {
+  position: absolute;
+  top: 0px;
+  left: 196px;
+  width: 151px;
+  height: 126px;
+}
+.layer-1-icon {
+  position: absolute;
+  top: 56px;
+  left: 139px;
+  width: 56px;
+  height: 23px;
+  overflow: hidden;
+}
+.layer-1-icon1 {
+  position: absolute;
+  top: 0px;
+  left: 131px;
+  width: 74px;
+  height: 52px;
+  overflow: hidden;
+}
+.lets-unite-for {
+  position: absolute;
+  top: 3006px;
+  left: 93px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  width: 1296px;
+}
+.psd226-1-icon {
+  position: absolute;
+  top: 2089px;
+  left: 0px;
+  width: 1232px;
+  height: 616px;
+  object-fit: cover;
+}
+.layer-1-parent {
+  position: absolute;
+  top: 18px;
+  left: 104px;
+  width: 1389px;
+  height: 3366px;
+  font-size: 150px;
+  font-family: var(--font-general-sans);
+}
+.desktop {
+  position: relative;
+  background-color: #070808;
+  width: 100%;
+  height: 4322px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
