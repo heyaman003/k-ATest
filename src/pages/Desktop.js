@@ -1,7 +1,8 @@
 import "./Desktop.css";
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 const Desktop = () => {
     const [isRotated, setRotated] = useState(false);
+    const [isloaded,setLoaded] = useState(false);
     const [rotationAngle, setRotationAngle] = useState(0);
   
     const handleMouseEnter = () => {
@@ -24,6 +25,11 @@ const Desktop = () => {
       setRotated(false);
       setRotationAngle(0);
     };
+    useEffect(() => {
+      // Add the 'loaded' class to trigger the animation on mount
+      setLoaded(true);
+      //document.querySelector('.component-2').classList.add('loaded');
+    }, []); 
   return (
     <div className="desktop">
       <div className="footer">
@@ -112,7 +118,7 @@ const Desktop = () => {
           <p className="companies-already-growing">companies already growing</p>
         </div>
       </div>
-      <div className="component-2">
+      <div className={`component-2 ${isloaded&&'loaded'}`}>
         <div className="title">Creating</div>
         <b className="title1">
           Discerning Digital Works and Communication Collaterals

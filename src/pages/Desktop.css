@@ -315,17 +315,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  animation: gradientAnimation 1s infinite alternate;
+  
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
 .links a:hover {
   color: #ffffff; /* Change to desired hover color */
   transition: color 0.3s ease-in-out;
@@ -343,7 +335,7 @@
   }
 }
 .title, .we-are {
-  animation: fadeAnimation 3s infinite alternate;
+  animation: fadeAnimation 12s infinite alternate;
 }
 
 @keyframes fadeAnimation {
@@ -354,10 +346,7 @@
     opacity: 1;
   }
 }
-.icon:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
+
 
 
 .title1 {
@@ -566,11 +555,24 @@
 }
 .icon {
   position: absolute;
+  z-index: 100;
   top: 728px;
   left: 506px;
   width: 1072px;
   height: 714px;
   object-fit: cover;
+  animation: fadeIn 10s ease-in-out; 
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .we-are {
   margin-block-start: 0;
@@ -585,7 +587,10 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  animation: fadeAnimation 3s infinite alternate;
 }
+
 .creative-designers-insightful1 {
   line-height: 125%;
 }
@@ -601,7 +606,9 @@
   display: inline-block;
   width: 710px;
   height: 231px;
+  opacity: 0;
   font-size: 128px;
+  animation: fadeAnimation 12s infinite alternate;
 }
 .the-organization-is {
   position: absolute;
@@ -690,4 +697,47 @@
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: var(--font-inter);
+}
+.component-2 {
+  position: absolute;
+  top: 194px;
+  left: 212px;
+  width: 935px;
+  height: 508px;
+  font-size: 200px;
+  overflow: hidden;
+}
+
+.title, .title1 {
+  position: absolute;
+  height: 54.33%;
+  width: 98.72%;
+  line-height: 110%;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.title {
+  top: 0;
+  left: 0;
+  font-weight: 800;
+  background: linear-gradient(244.91deg, #27daa4, #57f2cc 47.87%, #4596fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateX(-100%);
+}
+
+.title1 {
+  top: 45.67%;
+  left: 1.28%;
+  font-size: var(--font-size-29xl);
+  transform: translateX(100%);
+  transition: 4s ease-in-out;
+}
+
+.component-2.loaded .title, .component-2.loaded .title1 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 4s ease-in-out;
 }
