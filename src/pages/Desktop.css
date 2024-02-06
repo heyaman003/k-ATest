@@ -37,10 +37,16 @@
   height: 477px;
   color: var(--color-darkslategray);
 }
+.use-cases:hover{
+  color:  var(--gd);
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
 .product {
   position: relative;
   font-size: var(--font-size-xs);
   letter-spacing: 0.04em;
+  transition: 1s ease-out;
   line-height: 100%;
   text-transform: uppercase;
   font-weight: 500;
@@ -52,6 +58,7 @@
   position: relative;
   letter-spacing: -0.04em;
   line-height: 100%;
+  transition: 0.4s ease-in;
   display: inline-block;
   width: 202px;
 }
@@ -211,9 +218,9 @@
   position: relative;
   font-weight: 500;
 }
-
 .component-1 {
   position: absolute;
+  z-index: 100;
   top: 317px;
   left: 556px;
   border: 1px solid var(--color-gray-100);
@@ -224,14 +231,13 @@
   padding: 12px 20px;
   text-align: left;
   font-size: var(--font-size-sm);
-  transition: 0.3s ease-in-out; /* Add a transition for a smoother effect */
+  transition: all 3s ease-in;
 }
 
 .component-1:hover {
-  display: none;
-  cursor: pointer !important;
-  transition: 0.3s ease-in-out;
+  cursor: pointer ;
   background: linear-gradient(92.28deg, #fa8742, #fabc0e 63.98%, #ffdd51 87.85%) !important;
+  transition: all 3s ease-out;
 }
 
 .experience-the-power-of-speed-parent {
@@ -309,7 +315,17 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-} 
+  animation: gradientAnimation 1s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
 .links a:hover {
   color: #ffffff; /* Change to desired hover color */
   transition: color 0.3s ease-in-out;
@@ -417,7 +433,34 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-45xl);
+  overflow: hidden;
+  white-space: nowrap;
 }
+
+/* Keyframe animation for continuous horizontal movement */
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.product:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+  transition: 0.4s ease-in;
+  color:#fa8742;
+}
+/* Apply the animation to the content */
+.puma-logo-parent > * {
+  animation: slideInfinite 10s linear infinite;
+  white-space: nowrap; /* Prevent content inside each element from wrapping */
+}
+
 .vector-icon {
   position: absolute;
   height: 100%;
@@ -611,7 +654,23 @@
   width: 1232px;
   height: 616px;
   object-fit: cover;
+ /* Set initial opacity to 0 for fade-in effect */
+  animation: fadeIn 12s ease-in-out; /* Define animation property */
 }
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .layer-1-parent {
   position: absolute;
   top: 18px;

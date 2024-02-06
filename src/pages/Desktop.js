@@ -1,6 +1,29 @@
 import "./Desktop.css";
-
+import React,{useState} from "react";
 const Desktop = () => {
+    const [isRotated, setRotated] = useState(false);
+    const [rotationAngle, setRotationAngle] = useState(0);
+  
+    const handleMouseEnter = () => {
+      setTimeout(()=>{
+        setRotated(true);
+      },2000)
+      
+    };
+  
+    const handleMouseMove = (e) => {
+      const { clientX, clientY } = e;
+      const { left, top, width, height } = e.target.getBoundingClientRect();
+  
+      const angle = Math.atan2(clientY - (top + height / 1.5), clientX - (left + width / 1.5)) * (90 / Math.PI);
+      
+      setRotationAngle(angle);
+    };
+  
+    const handleMouseLeave = () => {
+      setRotated(false);
+      setRotationAngle(0);
+    };
   return (
     <div className="desktop">
       <div className="footer">
@@ -79,7 +102,7 @@ const Desktop = () => {
             <p className="hosting-infrastructure">hosting infrastructure</p>
           </div>
           <div className="component-1">
-            <div className="button1">Read our story</div>
+            <span className="button1" >Read our story</span>
           </div>
         </div>
       </header>
@@ -129,7 +152,15 @@ const Desktop = () => {
         <div className="overlay-left" />
         <div className="overlay-right" />
       </div>
-      <img className="icon" alt="" src="/1111-1@2x.png" />
+      <img
+        className={`icon ${isRotated ? 'rotated' : ''}`}
+        src="/1111-1@2x.png"
+        alt="my img"
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{ zIndex:100,transform: `rotate(${rotationAngle}deg)`, transition: 'transform 0.5s ease-in-out' }}
+      />
       <div className="we-are-creative-container">
         <p className="we-are">{`We are `}</p>
         <p className="creative-designers-insightful">
@@ -153,10 +184,14 @@ const Desktop = () => {
         <img className="layer-1-icon1" alt="" src="/layer-1.svg" />
         <b className="lets-unite-for">{`Let's unite for innovation `}</b>
         <img
-          className="psd226-1-icon"
-          alt=""
-          src="/23126555-199-psd226-1@2x.png"
-        />
+        className={`psd226-1-icon ${isRotated ? 'rotated' : ''}`}
+        src="/23126555-199-psd226-1@2x.png"
+        alt="my img"
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{ transform: `rotate(${rotationAngle}deg)`, transition: 'transform 0.5s ease-in-out' }}
+      />
       </div>
     </div>
   );
